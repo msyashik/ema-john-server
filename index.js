@@ -53,6 +53,5 @@ client.connect((err) => {
   });
 });
 
-app.listen(port, () => {
-  console.log(`Example app listening at http://localhost:${port}`);
-});
+var port_number = server.listen(process.env.PORT || 5000);
+app.listen(port_number);
